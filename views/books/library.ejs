@@ -6,6 +6,15 @@
     <title>Library</title>
 </head>
 <body>
-    
+
+    <h2>Your Current Library</h2>
+    <a href="/books/new">Add New Books</a>
+    <ul>
+        <% books.forEach(book => { %>
+          <li><%= book.title %></li>
+          <li><%= book.author.name %></li>
+          <li><%= book.author.name %></li>
+        <% }); %>
+      </ul>
 </body>
 </html>
